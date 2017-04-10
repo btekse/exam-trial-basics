@@ -20,20 +20,14 @@ public class CountAs {
       System.out.println("Something wrong:" + e.getClass());
     }
     String a = fileInput.toString();
-    int charCount  = a.length();
-    System.out.println(charCount);
-
-
-    //System.out.println(fileInput);
-
-    /*Path filepath = Paths.get("countas/afile.txt");
-    String text = filepath.toString();
-    char[] a = text.toCharArray();
-    int sz = a.length;
-
-    System.out.println(sz);*/
-
-
+    char ch = a.charAt(a.indexOf('a'));
+    int count = 0;
+    for (int i = 0; i < a.length(); i++) {
+      if (a.charAt(i) == 'a') {
+        count++;
+      }
+    }
+    System.out.println("Total count of letter a: " + count);
   }
 
 }
