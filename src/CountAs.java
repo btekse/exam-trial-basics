@@ -25,6 +25,8 @@ public class CountAs {
     for (int i = 0; i < a.length(); i++) {
       if (a.charAt(i) == 'a') {
         count++;
+      } else if (a.charAt(i) == 'A') {
+          count++;
       }
     }
     System.out.println("Total count of letter a: " + count);
