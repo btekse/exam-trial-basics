@@ -1,22 +1,23 @@
-
 public class Cuboid {
-  public int edgeSize;
-  public int surface;
-  public int volume;
 
-  public getSurface(int edgeSize) {
-    this.edgeSize = edgeSize;
-    surface = ( edgeSize * 2 ) * 6;
-  }
+  public int edgeSize_a;
+  public int edgeSize_b;
+  public int edgeSize_c;
 
-  public getVolume(int edgeSize) {
-    this.edgeSize = edgeSize;
-    volume = edgeSize * edgeSize * edgeSize
-  }
+Cuboid(int a, int b, int c) {
+  this.edgeSize_a = a;
+  this.edgeSize_b = b;
+  this.edgeSize_c = c;
+}
 
-  public int getVolume() {
-    return volume;
-  }System.out.println()
+int getSurface() {
+  return 2 * (edgeSize_a * edgeSize_b) + 2 * (edgeSize_a * edgeSize_c) + 2 * (edgeSize_b * edgeSize_c);
+}
+
+int getVolume () {
+  return edgeSize_a * edgeSize_b * edgeSize_c;
+}
+
 
 
   // Create a class that represents a cuboid:
